@@ -1,0 +1,1 @@
+Welcome to the Liquid template language tutorial! Liquid is an open-source template language that’s commonly used in platforms like Shopify and GitHub Pages. It allows you to create dynamic content by combining objects, tags, and filters within template files.
