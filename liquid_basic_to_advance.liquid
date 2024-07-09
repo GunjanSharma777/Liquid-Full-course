@@ -1,0 +1,168 @@
+Intro: Liquid is a combimantion of tags,filter and object inside template file for display dynamic content.
+
+	Object: It contant contents that displayed in page. use {{ }} for object.
+       	
+	Types: string, Number, Boolen, Nil, Array, EmptyDrop
+
+	Tags: It create logic and contrl flow for template. use Opening Tags are {% and closing tags %}. Between this tag have loops, conditions.
+
+		Types of tags: COntrol flow, iteration, Template, variable assignment
+
+	filters: can change the output of variaable or object. USe {{ }} & seperated by pipe(|)
+
+	Operators
+		Operator: Use Operator to create logic with control flow. ==(equals to), !=(not equal to), >, <, >=, <=, or, and
+
+	Truthy & falsy:
+	 	When non boolen data type  is used in boolen context. Truthy means True, falsy means false
+
+	Whitespace control
+		DOnt need any whitespace USE: {%- & -%}
+
+		before any variable name USE: assign
+
+TAGS
+	Control flow (CC): Contain conditional statemant like if, else/elsif, case/when, unless
+
+	Iteration (iL): Used in looping in arrays. Like for, else, break, continue, limit, offset, range, reversed, cycle, row, cols, 
+	
+		Being  loop with specifird index: offset
+
+		For odd/even class to row in table: Cycle
+
+		Generate HTML table: tblerow
+
+		offset: start tablerow loop in specific index: Offset	
+
+
+	Template: include  comment(#), inline comment, raw, render, include
+
+		inline comment: use ########
+		
+		Raw: useful for generat content that use conflicting syntax like Mustache, handlebars
+
+		Liquid: For multiple tags in one set 
+
+		echo: give output of HTML code. It work in Liquid tags and support filters.
+                                                                                       
+	Variable: beofre any variable USE assign.
+  
+		Capture: created Complex string
+
+		increment: increase value, index strt with 0
+
+		decrement: decress value, index strt with -1
+
+FILTERS
+
+	Number:
+
+		abs: return absolute no.(positive no.)
+
+		at_least: return maximum value
+
+		at_most: return minimum value
+
+		ceil: roundfigure up near to whole no.
+
+		floor: roundfigure down near to whole no
+
+		round: roundfigure to nearst no.
+
+		default: if input is NIL, FALSE or EMPTY then default wll show value
+
+	Arthmatic operator:		
+
+		divideed_by: divide by another no.
+
+		plus: add number
+
+		sum: sum all item of array 
+
+		minus: substract from another no.
+
+		times: multiply with another no.
+
+		modulo: return reminder of divided no.
+
+		size: return no. of character in string
+
+	String manipulation:
+
+		append: add string to end of another string
+
+		prepend: add any word in starting of another string
+
+		capitalize: capital first character of string
+
+		compact: remove NIL value from array
+
+		concat: join(concatenate) multiple arrays
+
+		downcase: return all string in lowercase
+
+		upcase: return all string in uppercase
+
+		escape:
+
+		escape_once: 
+
+		first: return first item of array
+
+		last: return last item of arry
+
+		join: combine item in an array into every array item
+
+		lstrip: remove space from left side of sring
+
+		rstrip: remove space from right side of sting
+
+		map: used to manipulate element of collection, such as an array or hash, using filter.
+
+		newline_to_br: insert <br/> in front of each newline of string
+
+		remove: remove specified word(subsring) from string
+
+		remove_first: remove first occurrence of specified word form string
+
+		replace: replace first argument with secound
+
+		replace_first: replace first occurrence of specified word form string
+
+		reverse: reverse order of item in an array
+
+		slice: return series of array item beginning at index by first argument
+
+		sort: sort item in array in case sensitive order
+
+		sort_naturl: sort item in array in case insensitive case
+
+		split: convert string into array
+
+		strip: remove space form booth side of string
+
+		strip_html: remove html tags
+
+		strip_newline: remove newline of string
+
+		truncate: 
+
+		truncatewords:
+
+		uniq: remove duplicate item
+
+		url_decode: decode string which is encoded as URL or url_encode
+
+		url_encode: convert URL into percent encoded character						
+
+		where: create array include object with property value
+
+	Date:
+		
+		date: convert timestamp into date formate
+
+		 
+
+				
+
+
